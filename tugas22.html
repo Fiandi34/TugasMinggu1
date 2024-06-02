@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <nav>
+      <div style="display: flex; align-items: center; height: 100%; margin-left: 30px">
+        <ul style="display: flex; list-style-type: none; gap: 45px; align-items: center">
+          <li>
+            <img src="logo.png" style="height: 60px; margin-top: 12px" />
+          </li>
+          <li class="nav-link">
+            <a href="tugas1.html">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="project.html">Project</a>
+          </li>
+        </ul>
+
+        <div style="display: flex; width: 80%; justify-content: end">
+          <a href="kontak.html" class="btn-button">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- form -->
+    <div style="margin: 90px; width: 250px; justify-content: center;"></div>
+      <form class="form-contact" style="margin-left: 600px;">
+        <h1 style="margin-right: 600px">Get In Touch</h1>
+        <label for="label-contact" > Name : </label>
+        <input type="text" class="input-contact" id="inputName" />
+        <label for="label-contact" > Email : </label>
+        <input type="text" class="input-contact" id="inputEmail" />
+        <label for="label-contact">Phone Number : </label>
+        <input type="text" class="input-contact" id="inputNumber" />
+        <label for="label-contact">Subject : </label>
+        <select id="inputSubject" class="input-contact">
+          <br />
+          <option></option>
+          <option style="color: black;" value="Frontend Developer">Frontend Developer</option>
+          <option style="color: black;" value="Backend Developer">Backend Developer</option>
+          <option style="color: black;" value="Fullstack Developer">Fullstack Developer</option></select
+        ><br />
+        <label for="label-contact">Your Message :</label>
+        <textarea style="color: black; height: 80px; " class="input-contact" id="inputMessage"></textarea>
+        <br /><br />
+        <input style="background-color: green; cursor: pointer;" type="button" value="Submit" onclick="submitData()" class="submit" />
+      </form>
+    </div>
+    <script src="tugas3.js"></script>
+  </body>
+</html>

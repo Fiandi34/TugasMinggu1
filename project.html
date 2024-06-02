@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div style="display: flex; align-items: center; height: 100%; margin-left: 30px">
+        <ul style="display: flex; list-style-type: none; gap: 45px; align-items: center">
+          <li>
+            <img src="logo.png" style="height: 60px; margin-top: 12px" />
+          </li>
+          <li class="nav-link">
+            <a href="tugas1.html">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="project.html">Project</a>
+          </li>
+        </ul>
+
+        <div style="display: flex; width: 80%; justify-content: end">
+          <a href="tugas22.html" class="btn-button">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- konten -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="submitBlog()">
+            <center><h1">Add My Project</h1></center>
+            <div>
+              <label for="label-project">Project Name :</label>
+              <input type="text" class="input-project" id="nameProject" style="width: 98%; margin-left: 2px; color: black;" />
+            </div>
+            <div>
+              <label for="label-project">Start Date :</label>
+              <input type="text" class="input-project" id="startProject" style="color: black;" />
+              <label for="label-project">End Date :</label>
+              <input type="text" class="input-project" id="endProject" style="color: black;"/>
+            </div>
+            <div>
+              <label for="label-project">Description :</label><br />
+              <textarea name="inputDescription" id="descProject" cols="30" rows="10" style="width: 98%; margin-left: 2px; color: black;"></textarea>
+            </div>
+            <div>
+              <label for="tech">Technologies : </label><br />
+              <input type="checkbox" id="bahasa" name="teknologi" value="Node JS" />
+              <label for="tech"> Node JS </label><br />
+              <input type="checkbox" id="bahasa" name="teknologi" value="React JS" />
+              <label for="tech"> React JS </label><br />
+              <input type="checkbox" id="bahasa" name="teknologi" value="Next JS" />
+              <label for="tech"> Next JS </label><br>
+              <input type="checkbox" id="bahasa" name="teknologi" value="Typescript" />
+              <label for="tech"> Typescript </label><br><br>
+            </div>
+            <div>
+              <label for="image">Upload Image: </label><br>
+              <input type="file" id="inputImage"><br><br><br>
+              <input style="background-color: green; cursor: pointer;" type="button" value="Submit" class="submit" onclick="submitBlog(event)"/>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line">
+      <div id="project" class="blog-list" style="background-color: black;">
+
+      </div>
+    </div>
+    <script src="project.js"></script>
+  </body>
+</html>
