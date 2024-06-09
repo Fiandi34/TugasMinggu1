@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/cssFile/index.css" />
+    <link rel="stylesheet" href="/cssFile/blog-detail.css" />
+  </head>
+  <body>
+    <nav>
+      <div style="display: flex; align-items: center; height: 100%; margin-left: 30px">
+        <ul style="display: flex; list-style-type: none; gap: 45px; align-items: center">
+          <li>
+            <img src="/gambar/logo.png" style="height: 60px; margin-top: 12px" />
+          </li>
+          <li class="nav-link nav-collapse">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-link nav-collapse">
+            <a href="project.html">Blog</a>
+          </li>
+          <li class="nav-link nav-collapse">
+            <a href="blog-detail.html">Blog Details</a>
+          </li>
+        </ul>
+
+        <div style="display: flex; width: 80%; justify-content: end">
+          <a href="contactMe.html" class="btn-button nav-collapse">Contact Me</a>
+          <button class="fa-solid fa-bars" type="hamburger" id="hamburger-button" style="cursor: pointer" onclick="openHamburger()">
+            <i></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- hamburger button -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html" class="active">Home</a>
+      <a href="project.html">Blog</a>
+      <a href="contactMe.html">Contact Me</a>
+    </div>
+    <!-- blog detail -->
+    <div class="blog-detail">
+      <div class="blog-detail-container" style="border: 1px solid green">
+        <h1 style="color: green">Pasar Coding di Indonesia Masih Sangat Menjanjikan</h1>
+        <div class="author" style="color: green">6 Juni 2024 6:47 WIB | Fiandi Fauzan</div>
+        <img src="/gambar/Blog.png" alt="blog-detail" style="width: 100%" />
+        <p style="color: green">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ad illum eligendi sapiente architecto voluptatibus delectus earum modi labore quae blanditiis fugiat numquam placeat possimus, quibusdam nam explicabo, ea
+          aperiam?
+        </p>
+      </div>
+    </div>
+    <script src="/jsFile/project.js"></script>
+    <script src="/jsFile/nav.js"></script>
+  </body>
+</html>

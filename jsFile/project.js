@@ -38,7 +38,7 @@ function submitBlog(event) {
   console.log("dataArray", dataBlog);
   renderBlog();
 }
-// <a href = "blog-detail.html" target = "_blank" style: "color: black;"></a>
+
 function renderBlog() {
   document.getElementById("project").innerHTML = "";
   for (var index = 0; index < dataBlog.length; index++) {
@@ -48,7 +48,7 @@ function renderBlog() {
       </div>
       <div class = "blog-content">
         <h1 >
-          ${dataBlog[index].Name}
+          <a href = "blog-detail.html">${dataBlog[index].Name}</a>
         </h1>
       </div>
         <div class ="detail-blog">

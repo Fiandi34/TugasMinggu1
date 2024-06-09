@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimoni</title>
+    <link rel="stylesheet" href="/cssFile/index.css" />
+    <link rel="stylesheet" href="/cssFile/testimoni.css" />
+  </head>
+  <body>
+    <nav>
+      <div style="display: flex; align-items: center; height: 100%; margin-left: 30px">
+        <ul style="display: flex; list-style-type: none; gap: 45px; align-items: center">
+          <li>
+            <img src="/gambar/logo.png" style="height: 60px; margin-top: 12px" />
+          </li>
+          <li class="nav-link nav-collapse">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-link nav-collapse">
+            <a href="project.html">Blog</a>
+          </li>
+          <li class="nav-link nav-collapse">
+            <a href="blog-detail.html">Blog Details</a>
+          </li>
+        </ul>
+
+        <div style="display: flex; width: 80%; justify-content: end">
+          <a href="contactMe.html" class="btn-button nav-collapse">Contact Me</a>
+          <button class="fa-solid fa-bars" type="hamburger" id="hamburger-button" style="cursor: pointer" onclick="openHamburger()">
+            <i></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- hamburger button -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html" class="active">Home</a>
+      <a href="project.html">Blog</a>
+      <a href="contactMe.html">Contact Me</a>
+    </div>
+
+    <div class="container">
+      <h1 class="judul">My Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating by Star</h2>
+        <div class="rating">
+          <button class="btn-rating" onclick="allTestimoni()">All</button>
+          <button class="btn-rating" onclick="filterTestimoni(1)">1 <i class="fa-light fa-star"></i></button>
+          <button class="btn-rating" onclick="filterTestimoni(2)">2 <i class="fa-light fa-star"></i></button>
+          <button class="btn-rating" onclick="filterTestimoni(3)">3 <i class="fa-light fa-star"></i></button>
+          <button class="btn-rating" onclick="filterTestimoni(4)">4 <i class="fa-light fa-star"></i></button>
+          <button class="btn-rating" onclick="filterTestimoni(5)">5 <i class="fa-light fa-star"></i></button>
+          <i class="fa-regular fa-star" style="color: #28bd32"></i>
+        </div>
+      </div>
+      <div class="testimonials" id="testimonials">
+        <div class="testimoni">
+          <img src="/gambar/antony_43.png" alt="testimoni" class="profile-testi" />
+          <p class="quote">tydack ramah bintang 1</p>
+          <p class="author" style="font-weight: bold; font-size: 30px; margin-top: 5px">-Antony</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/jsFile/project.js"></script>
+    <script src="/jsFile/testimonial.js"></script>
+    <script src="/jsFile/nav.js"></script>
+  </body>
+</html>

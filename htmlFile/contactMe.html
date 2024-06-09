@@ -4,28 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="/cssFile/index.css" />
   </head>
   <body>
     <nav>
       <div style="display: flex; align-items: center; height: 100%; margin-left: 30px">
         <ul style="display: flex; list-style-type: none; gap: 45px; align-items: center">
           <li>
-            <img src="logo.png" style="height: 60px; margin-top: 12px" />
+            <img src="/gambar/logo.png" style="height: 60px; margin-top: 12px" />
           </li>
-          <li class="nav-link">
+          <li class="nav-link nav-collapse">
             <a href="index.html">Home</a>
           </li>
-          <li class="nav-link">
-            <a href="project.html">Project</a>
+          <li class="nav-link nav-collapse">
+            <a href="project.html">Blog</a>
+          </li>
+          <li class="nav-link nav-collapse">
+            <a href="blog-detail.html">Blog Details</a>
           </li>
         </ul>
 
         <div style="display: flex; width: 80%; justify-content: end">
-          <a href="kontak.html" class="btn-button">Contact Me</a>
+          <a href="contactMe.html" class="btn-button nav-collapse">Contact Me</a>
+          <button class="fa-solid fa-bars" type="hamburger" id="hamburger-button" style="cursor: pointer" onclick="openHamburger()">
+            <i></i>
+          </button>
         </div>
       </div>
     </nav>
+    <!-- hamburger button -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html" class="active">Home</a>
+      <a href="project.html">Blog</a>
+      <a href="contactMe.html">Contact Me</a>
+    </div>
     <!-- form -->
     <div style="margin: 90px; width: 250px; justify-content: center;"></div>
       <form class="form-contact" style="margin-left: 600px;">
@@ -47,9 +59,10 @@
         <label for="label-contact">Your Message :</label>
         <textarea style="color: black; height: 80px; " class="input-contact" id="inputMessage"></textarea>
         <br /><br />
-        <input style="background-color: green; cursor: pointer;" type="button" value="Submit" onclick="submitData()" class="submit" />
+        <input style="background-color: black; cursor: pointer; color: green;" type="button" value="Submit" onclick="submitData()" class="submit" />
       </form>
     </div>
-    <script src="tugas3.js"></script>
+    <script src="/jsFile/form.js"></script>
+    <script src="/jsFile/nav.js"></script>
   </body>
 </html>

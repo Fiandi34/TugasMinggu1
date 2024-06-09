@@ -1,7 +1,4 @@
 body {
-  /* background-image: url(razer2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
   background-color: black;
 }
 .nav-link {
@@ -31,8 +28,22 @@ body {
 }
 
 .btn-button {
-  background-color: rgb(25, 128, 16);
-  color: aliceblue;
+  background-color: black;
+  border: 1px solid green;
+  color: green;
+  padding: 10px;
+  width: 78px;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 0 50px green;
+  animation: flicker 1.5s infinite alternate;
+}
+.btn-button-content {
+  background-color: gainsboro;
+  color: black;
+  border: 1px solid green;
   padding: 10px;
   width: 78px;
   font-size: 15px;
@@ -73,24 +84,36 @@ body {
 }
 .input-contact {
   border-radius: 5px;
+  background-color: black;
+  color: green;
+  margin: 1px solid green;
   margin-bottom: 8px;
   padding: 6px;
   resize: none;
   width: 540px;
+  box-shadow: 0 0 50px green;
 }
 label {
   animation: flicker 1.5s infinite alternate;
   color: rgb(40, 211, 40);
 }
-#input-project {
-  color: black;
+.input-project {
+  color: green;
+  background-color: black;
   font-size: large;
+  border: 1px solid green;
+  box-shadow: 0 0 50px green;
 }
 .submit {
   width: 100px;
-  color: white;
+  background-color: black;
+  color: green;
   border-radius: 10px;
   padding: 8px;
+  cursor: pointer;
+  animation: flicker 1.5s infinite alternate;
+  border: 1px solid green;
+  box-shadow: 0 0 50px green;
 }
 
 .blog-form {
@@ -111,14 +134,17 @@ select {
   margin-bottom: 10px;
   border-radius: 6px;
   resize: none;
-  background-color: white;
-  color: white;
+  background-color: black;
+  color: green;
+  border: 1px solid green;
+  box-shadow: 0 0 50px green;
 }
 .blog hr {
   border: 1px solid green;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 0 50px green;
 }
 .blog .blog-list-item {
   flex-direction: column;
@@ -157,6 +183,7 @@ select {
   border-radius: 10px;
   background-color: green;
   border-radius: 10px;
+  display: flex;
 }
 .blog .blog-list .blog-list-item .btn-group .blog-delete {
   text-align: right;
@@ -164,10 +191,13 @@ select {
   border-radius: 10px;
   background-color: green;
   border-radius: 10px;
+  display: flex;
 }
 .blog .blog-list h1 a {
   text-decoration: none;
-  color: green;
+  color: #4db14d;
+  text-align: justify;
+  margin-right: 10px;
 }
 .blog .blog-list .detail-blog {
   font-weight: bold;
@@ -184,5 +214,34 @@ select {
   text-align: justify;
   color: green;
   animation: flicker 1.5s infinite alternate;
-  color: rgb(40, 211, 40);
+}
+.hamburger-nav-container {
+  display: none;
+}
+.hamburger-nav-container a {
+  color: green;
+  animation: flicker 1.5s infinite alternate;
+  border: 1px solid green;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+.hamburger-nav-container .active {
+  background-color: green;
+  color: gainsboro;
+  box-shadow: 0 0 50px green;
+}
+@media only screen and (max-width: 500px) {
+  #hamburger-button {
+    display: block;
+  }
+  .nav-collapse {
+    display: none;
+  }
+  .hamburger-nav-container {
+    display: none;
+    font-size: 23px;
+    flex-direction: column;
+  }
 }
